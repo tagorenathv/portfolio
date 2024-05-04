@@ -16,10 +16,6 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
   },
@@ -28,9 +24,9 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Education",
-    hash: "#education",
-  },
+    name: "Projects",
+    hash: "#projects",
+  },  
   {
     name: "Contact",
     hash: "#contact",
@@ -175,79 +171,79 @@ export const projectsData = [
 
 export const skillsData = [
   {
-    name: "JavaScript",
-    icon: "logos:javascript",
+    name: "Java",
+    icon: "logos:java",
   },
   {
-    name: "TypeScript",
-    icon: "logos:typescript-icon",
+    name: "Python",
+    icon: "logos:python",
+  }, 
+  {
+    name: "AWS",
+    icon: "skill-icons:aws-dark",
+  },
+  {
+    name: "GCP",
+    icon: "skill-icons:gcp-dark"
+  },
+  {
+    name: "Spring Boot",
+    icon: "devicon:spring"
   },
   {
     name: "React",
     icon: "logos:react",
   },
   {
-    name: "Node.js",
-    icon: "logos:nodejs-icon",
+    name: "Flutter",
+    icon: "devicon:flutter"
   },
   {
-    name: "PHP",
-    icon: "logos:php",
+    name: "PostgreSQL",
+    icon: "devicon:postgresql"
   },
   {
-    name: "Laravel",
-    icon: "logos:laravel",
+    name: "MongoDB",
+    icon: "vscode-icons:file-type-mongo",
   },
   {
-    name: "Symfony",
-    icon: "logos:symfony",
+    name: "Elasticsearch",
+    icon: "devicon:elasticsearch"
   },
   {
-    name: "Python",
-    icon: "logos:python",
+    name: "Redis",
+    icon: "devicon:redis"
   },
   {
-    name: "Java",
-    icon: "logos:java",
-  },
-  {
-    name: "HTML",
-    icon: "vscode-icons:file-type-html",
-  },
-  {
-    name: "CSS",
-    icon: "vscode-icons:file-type-css",
-  },
-  {
-    name: "SCSS",
-    icon: "logos:sass",
+    name: "Kafka",
+    icon: "mdi:apache-kafka",
   },
   {
     name: "Git",
     icon: "logos:git-icon",
   },
   {
-    name: "MySQL",
-    icon: "logos:mysql",
+    name: "CI / CD",
+    icon: "clarity:ci-cd-line"
   },
   {
-    name: "Linux",
-    icon: "flat-color-icons:linux",
+    name: "Apache Spark",
+    icon: "devicon:apachespark"
   },
-  {
-    name: "AWS",
-    icon: "logos:aws",
-  },
+ 
   {
     name: "Docker",
     icon: "logos:docker-icon",
   },
+  
+ 
+  
   {
-    name: "Jenkins",
-    icon: "devicon:jenkins",
+    name: "Kubernetes",
+    icon: "devicon:kubernetes"
   },
-  {
-    name: "Shopify",
-    icon: "logos:shopify",
-  },
+  
+  
+ 
+  
 ] as const;

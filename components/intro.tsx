@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ParticleContainer from "./particle-container";
-import githubdp from "@/public/githubdp.jpg";
+import profilePic from "@/public/profile-pic.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -32,13 +32,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src={githubdp}
+              src={profilePic}
               alt="Ricardo portrait"
               width="192"
               height="192"
               quality="95"
               priority={true}
-              className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-48 w-48 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -53,19 +53,18 @@ export default function Intro() {
               duration: 0.7,
             }}
           >
-            👋
           </motion.span>
         </div>
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-0 sm:px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-white max-w-[50rem] mx-auto"
+        className="mb-10 mt-4 px-0 sm:px-4 text-2xl font-thin !leading-[1.5] sm:text-4xl text-white max-w-[70rem] mx-auto"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ben.</span> I'm a{" "}
-        <span className="font-bold">software engineer</span> at{" "}
-        <span className="font-bold">Humanforce</span> in Brisbane. I'm currently working with Laravel, React.js, GraphQL, and AWS.
+        <span className="font-bold">Hello, I'm Tagorenath.</span> I'm a{" "}
+        <span className="font-bold">Software Engineer</span> with expertise in designing and developing {" "}
+        <span className="font-bold">scalable and cost-efficient</span> software architectures. I also contribute to open-source projects and support startups in their digital transformation.
       </motion.h1>
 
       <motion.div
@@ -78,7 +77,7 @@ export default function Intro() {
       >
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-105 active:scale-105 transition cursor-pointer borderBlack text-gray-950"
-          href="https://github.com/ben04rogers"
+          href="https://github.com/tagorenathv"
           target="_blank"
         >
           GitHub <FaGithub className="opacity-70" />
@@ -86,7 +85,7 @@ export default function Intro() {
 
         <a
           className="group bg-gray-950 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition border-2 border-white border-opacity-40"
-          href="https://www.linkedin.com/in/ben-rogers-dev/"
+          href="https://www.linkedin.com/in/tagorenathv"
           target="_blank"
         >
           <span className="opacity-70">LinkedIn</span>

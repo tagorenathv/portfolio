@@ -1,18 +1,17 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import cryptoCrowdImg from "@/public/cryptocrowd2.png";
-import ozdevsImg from "@/public/ozdevs-two.png";
-import assetTradingImg from "@/public/asset-trading.jpg";
-import euphorusImg from "@/public/euphorus-two.png";
+import mtomImg from "@/public/mtom.png";
+import telosairImg from "@/public/telosair.png";
+import iotSaasImg from "@/public/iot-saas.png";
+import shiftRosterImg from "@/public/shift-roster.png";
 import euphorusBackendImg from "@/public/euphorus-backend.png";
-import techprowlImg from "@/public/techprowl-two.png";
-import taskManagerImg from "@/public/task-manager.png";
-import familyTreeImg from "@/public/bfsproject.jpg";
-import binaryGameImg from "@/public//binary-game.png";
+import lambtonImg from '@/public/lambton.png';
+import ocj4uImg from "@/public/ocj4u.png";
 import saa from "@/public/aws-saa.png";
 import cda from "@/public/aws-cda.png";
 import mcda from "@/public/mongodb-cda.png";
 import scw from "@/public/scw.png";
+import openlocalizationImg from "@/public/openlocalization.png";
 
 export const links = [
   {
@@ -100,102 +99,73 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CryptoCrowd",
+    title: "MtoM",
     description:
-      "Cryptocurrency sentiment analysis on tweets. Users can see the overall sentiment (positive, negative or neutral) of different Cryptocurrencies based on what people are currently tweeting. Users can also see keywords and an average sentiment score. Stateless application that uses Elasticache and S3 on AWS. It also used EC2 and auto-scaling to manage demand.",
-    tags: ["JavaScript", "React", "Express.js", "AWS"],
+      "I guided the startup from vision to reality, designing and leading the development of a comprehensive society management platform. My technical and design expertise not only brought their product to market but also created a robust and scalable system that seamlessly integrates essential services, significantly boosting community efficiency and convenience.",
     icons: [
-      "logos:aws",
-      "logos:javascript",
+      "logos:java",
+      "skill-icons:aws-dark",
       "logos:react",
-      "logos:bootstrap",
-      "logos:express",
+      "devicon:flutter",
+      "devicon:postgresql",
     ],
-    imageUrl: cryptoCrowdImg,
-    githubLink: "https://github.com/ben04rogers/cab432-assignment-2",
-    demoLink: "https://www.youtube.com/watch?v=uhyC0M4WIl4",
+    imageUrl: mtomImg,
+    urlLink: "https://mtommart.com",
   },
   {
-    title: "OzDevs",
+    title: "TelosAir",
     description:
-      "Reverse Job board for companies looking to hire developers in Australia. Filter by experience, location and keyboards.  Companies can pay a monthly fee to be able to message developers on the site and view their information.",
-    tags: ["PHP", "Laravel", "JavaScript", "Tailwind", "MySQL"],
+      "I undertook a major revamp of their existing architecture to transition it into a scalable SaaS model, significantly broadening its market potential. I also spearheaded the migration of their services to AWS IoT and EKS, enhancing the platform's reliability and performance. My efforts not only modernized TelosAir's infrastructure but also optimized operational efficiency and expanded its service capabilities, setting a new standard for future developments.",
     icons: [
-      "logos:laravel",
-      "logos:php",
-      "logos:javascript",
-      "devicon:tailwindcss",
-      "logos:mysql",
+      "logos:java",
+      "skill-icons:aws-dark",
+      "eos-icons:iot",
+      "devicon:postgresql",
     ],
-    imageUrl: ozdevsImg,
-    urlLink: "https://clownfish-app-48u2r.ondigitalocean.app/",
-    githubLink: "https://github.com/ben04rogers/ozdevs-v2",
+    imageUrl: telosairImg,
+    urlLink: "https://www.telosair.com",
   },
   {
-    title: "Company Asset Trading",
+    title: "OCJ4U App",
     description:
-      "Client-server system written in Java for trading of virtual assets within departments of a company. Facilitated trades via a marketplace model where users can buy and sell assets. Admins of an organisation can create assets, users and modify details. Uses MariaDB as a database and Swing for the GUI.",
-    tags: ["Java", "MariaDB", "Swing"],
-    icons: ["logos:java", "logos:mariadb-icon"],
-    imageUrl: assetTradingImg,
-    githubLink: "https://github.com/ben04rogers/organisation-asset-trading",
+      "I proposed and developed a mobile application to enhance access to India's prominent portal for freshers seeking off-campus job opportunities. I handled the design, development, and launch of the app, integrating it with the existing site data to ensure a smooth and accessible mobile user experience. This initiative significantly broadened the platform's accessibility and improved user engagement by simplifying the job search process on mobile devices.",
+    icons: ["logos:flutter",],
+    imageUrl: ocj4uImg,
+    demoLink: "https://play.google.com/store/apps/details?id=com.offcampusjobs4u.offcampusjobs4u&hl=en&gl=US",
+    urlLink: "https://offcampusjobs4u.com",
   },
   {
-    title: "Euphorus",
+    title: "IoT SaaS",
     description:
-      "React application for viewing country happiness data collected from the World Happiness Report initiative. Users can filter by year, country and search limit. AG Grid and Chart.js were used to present the data.",
-    tags: ["JavaScript", "React", "Bootstrap"],
-    icons: ["logos:javascript", "logos:react", "logos:bootstrap"],
-    imageUrl: euphorusImg,
-    githubLink: "https://github.com/ben04rogers/cab230assignment1",
+      "For the MongoDB hackathon, I developed a prototype that leverages MongoDB Atlas and Realm to offer IoT device management as a subscription-based SaaS model. Users can subscribe to devices, monitor data, and receive real-time alerts. This application showcases MongoDB's robust capabilities, including time-series data management, advanced search functionalities, and automated triggers, providing a comprehensive demonstration of modern database technologies applied to IoT services.",
+    icons: ["vscode-icons:file-type-mongo", "devicon-plain:realm-wordmark", "logos:react",],
+    imageUrl: iotSaasImg,
+    githubLink: "https://github.com/tagorenathv/iot-saas",
+    demoLink: "https://drive.google.com/file/d/1BQeS1Lk1g_3Mn-lEJDrh5oxGd6RKVUr8/view",
   },
   {
-    title: "Country Happiness API",
+    title: "Slack Shift Roster",
     description:
-      "Developed and deployed an Express API to support the front-end of the Euphorus Happiness Data web application. Routes support query parameters and authorization using JWT. Includes endpoints for countries, rankings, factors, registration, login, and profile. Tested software extensively with Jest and created Swagger documentation for the API as well.      ",
-    tags: ["JavaScript", "Node.js", "Express.js", "Swagger", "MySQL"],
-    icons: ["logos:javascript", "logos:express", "logos:swagger", "cib:mysql"],
-    imageUrl: euphorusBackendImg,
-    githubLink: "https://github.com/ben04rogers/cab230assignment2",
+      "This open-source application simplifies shift roster management within Slack using serverless architecture, offering plug-and-play ease and maintaining data privacy without operational overhead. Built with Python and AWS SAM, it's designed for pay-per-use efficiency, avoiding heavy infrastructure costs. The system provides scalable, transparent scheduling that seamlessly integrates with Slack, enhancing fairness and communication while effortlessly adapting to diverse team needs.",
+    icons: ["logos:python", "devicon:slack", ],
+    imageUrl: shiftRosterImg,
+    githubLink: "https://github.com/tagorenathv/slack-shift-roster",
   },
   {
-    title: "Techprowl Computer Auction",
+    title: "Open Localization",
     description:
-      "Computer auction application built with Flask. The site allows users to register, bid on items, leave reviews, post new listings, manage listings, search by keyword, and keep a watch list. ",
-    tags: ["Python", "Flask", "Bootstrap", "SQLite"],
-    icons: ["logos:python", "logos:bootstrap", "logos:sqlite"],
-    imageUrl: techprowlImg,
-    githubLink: "https://github.com/ben04rogers/computer-auction",
-    urlLink: "https://techprowl.herokuapp.com",
+      "This serverless project, akin to PhraseApp, offers a streamlined and cost-effective localization solution built with Python, ReactJS, and AWS. Deploying directly within a user's AWS account ensures privacy and reduces infrastructure complexity. With its scalability and ease of integration, it is an optimal tool for companies looking to enhance global accessibility efficiently, without the operational overhead typically associated with traditional localization tools.",
+    icons: ["logos:python", "skill-icons:aws-dark", "logos:react", ],
+    imageUrl: openlocalizationImg,
+    githubLink: "https://github.com/tagorenathv/open-localization-serverless",
   },
   {
-    title: "Task Manager Console App",
+    title: "Lambton College Program Advisory",
     description:
-      "Console app that manages tasks in a project. Users can load projects from a file and generate a seqeuence to complete them in, based on each task's dependencies. Users can also find earliest possible commencement time of each task, add new tasks, update tasks, remove tasks, and save the results to a text file.",
-    tags: ["C#"],
-    icons: ["devicon:csharp"],
-    imageUrl: taskManagerImg,
-    githubLink: "https://github.com/ben04rogers/task-manager",
-  },
-  {
-    title: "Family Tree Shortest Path",
-    description:
-      "Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree",
-    tags: ["Python"],
-    icons: ["logos:python"],
-    imageUrl: familyTreeImg,
-    githubLink: "https://github.com/ben04rogers/breadth-first-search",
-    demoLink: "https://www.youtube.com/watch?v=VXCZKsqupxA",
-  },
-  {
-    title: "Arduino Binary Game",
-    description:
-      "Binary game written in C that runs on an Arduino Uno using Tinkercad. The game aims to help users learn binary by challenging them to input different integers in their binary form within a time limit.",
-    tags: ["C"],
-    icons: ["devicon:c"],
-    imageUrl: binaryGameImg,
-    githubLink: "https://github.com/ben04rogers/binary-game-microcontroller",
-    demoLink: "https://www.youtube.com/watch?v=A6n6XDk4Unw&feature=youtu.be",
+      "I have served as a member of the Program Advisory Committee for Lambton College's Big Data with AI/ML specialization course, a program offered by a well-regarded institution known for its emphasis on innovation and industry-aligned education. In this role, I provided crucial insights to the curriculum, ensuring it stays at the forefront of technological advancements and meets the complex demands of today's data-driven industries. My contributions help prepare students to excel in the dynamic fields of big data, artificial intelligence, and machine learning, equipping them with the necessary skills to succeed.",
+    icons: ["devicon:hadoop", "carbon:ai", "gravity-ui:abbr-ml", ],
+    imageUrl: lambtonImg,
+    urlLink: "https://www.lambtoncollege.ca",
   },
 ] as const;
 

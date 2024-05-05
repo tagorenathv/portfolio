@@ -10,6 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { Icon } from "@iconify/react";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -46,8 +47,18 @@ export default function Experience() {
               <h3 className="font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-                {item.description}
+                {item.description.split("\n").map((part, index) => (
+                  <React.Fragment key={index}>
+                    {part}
+                    {index !== item.description.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
               </p>
+              <ul className="flex flex-wrap mb-3 sm:mt-auto">
+                {item.skillIcons.map((icon, iconIndex) => (
+                  <Icon key={iconIndex} icon={icon} className="mr-3 md:text-4xl" />
+                ))}
+              </ul>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

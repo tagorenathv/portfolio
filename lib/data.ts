@@ -9,6 +9,10 @@ import techprowlImg from "@/public/techprowl-two.png";
 import taskManagerImg from "@/public/task-manager.png";
 import familyTreeImg from "@/public/bfsproject.jpg";
 import binaryGameImg from "@/public//binary-game.png";
+import saa from "@/public/aws-saa.png";
+import cda from "@/public/aws-cda.png";
+import mcda from "@/public/mongodb-cda.png";
+import scw from "@/public/scw.png";
 
 export const links = [
   {
@@ -24,8 +28,12 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Projects",
+    name: "Contributions",
     hash: "#projects",
+  },
+  {
+    name: "Certifications",
+    hash: "#certifications",
   },  
   {
     name: "Contact",
@@ -35,36 +43,58 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Web Developer",
-    location: "M3 Digital - Contract",
+    title: "Senior Software Engineer",
+    location: "Delivery Hero, Berlin",
     description:
-      "Front-end development for a variety of Shopify stores such as FitazFK, Rider Collective, Masseuse Massage, Francesca Jewellery and Salty Captain. Developed high quality landing pages and front end features using HTML, CSS, SCSS, JavaScript and Liquid.",
+      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization timeline from 30 minutes to 25 minutes.\nAdditionally, I introduced a low-latency GraphQL API, enabling internal systems to directly access up-to-date catalog data. This eliminated the need for these systems to replicate data, streamlining operations and significantly enhancing data accessibility and efficiency.",
     icon: React.createElement(CgWorkAlt),
-    date: "September 2021 - February 2022",
+    skillIcons: ["logos:java", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
+    date: "October 2023 - Till Date",
   },
   {
-    title: "Junior Developer",
-    location: "YouPay",
+    title: "Senior Software Engineer",
+    location: "Auto1, Berlin",
     description:
-      "Developed new features using Laravel, Vue.js, PHP, JavaScript, Tailwind CSS, MySQL and REST APIs. Created an email notification system for mechants to receive weekly/monthly summaries of YouPay carts created, paid and cancelled. I also integrated YouPay into dozens of stores.",
+      "In the Merchant Experience team at Auto1, which operates across 30 countries, I worked on services integral to merchant onboarding and management. Additionally, I enhanced the infrastructure for critical services used organization-wide, including notification, email, and tracking systems.\nI re-engineered the email service to maintain continuity after interruptions, essential for efficiently managing the distribution of millions of messages. I also improved the notification service by implementing an archival process and refining queries, significantly boosting performance and reliability across the company's operations.",
     icon: React.createElement(CgWorkAlt),
-    date: "February 2022 - November 2022",
+    skillIcons: ["logos:java", "skill-icons:aws-dark", "devicon:postgresql", "devicon:elasticsearch",],
+    date: "September 2021 - September 2023",
   },
   {
-    title: "Software Engineer",
-    location: "The University of Queensland",
+    title: "Principal Engineer",
+    location: "Imaginea, Remote",
     description:
-      "Full-stack software engineer in the Application Development and Support team. Worked on web applications such as CAHP (Casual Academic Hire and Payment), UQ Maps, UQ Donations, and Programs and Courses.",
+      "I initiated and led the development of a 'Price per Usage' model proof of concept for Tamr's AI/ML SaaS solutions, significantly boosting the product’s adaptability and appeal in the marketplace. In parallel, I crafted a refined onboarding process that optimized user engagement and retention.\nThe architectural guidelines I developed promoted uniformity and efficiency, significantly speeding up project timelines and elevating the quality across various product offerings.",
     icon: React.createElement(CgWorkAlt),
-    date: "November 2022 - January 2024",
+    skillIcons: ["vscode-icons:file-type-go", "skill-icons:aws-dark", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
+    date: "May 2021 - August 2021",
   },
   {
-    title: "Software Engineer",
-    location: "Humanforce",
+    title: "Software Engineer Specialist",
+    location: "Telstra, Hyderabad",
     description:
-      "Software engineer in the intelliHR platform team. We are a feature enablement team dedicated to developing features for developers, ensuring they are easier to create. We also look after issues of scale and technical debt for developers and the platform.",
+      "I played a pivotal role in enhancing the EOV platform, which tracks customer orders and behaviors in real-time, handling over 100 million events per hour. I developed and open-sourced a custom NiFi processor for AWS KMS, significantly enhancing the platform's security and compliance frameworks. Additionally, I refined our HBase data storage strategy, optimizing from row-based to column-based storage, which significantly improved processing efficiency and resource utilization.\nOverall, our improvements across the platform led to a 40% reduction in operational costs, while also providing deeper insights into customer interactions and reinforcing Telstra’s commitment to exceptional service and cost-effectiveness.",
     icon: React.createElement(CgWorkAlt),
-    date: "January 2024 - Present",
+    skillIcons: ["logos:java", "skill-icons:aws-dark", "devicon:apachespark", "logos:apache-flink-icon", "logos:hbase", "devicon:postgresql", "simple-icons:apachehive"],
+    date: "March 2019 - May 2021",
+  },
+  {
+    title: "Data Engineer",
+    location: "TMCL, Hyderabad",
+    description:
+      "As the first developer and lead for this startup, I oversaw the complete lifecycle of a SIEM product, from its initial concept and architecture design to its development and market introduction.\nMy leadership included recruiting and managing the development team, conducting client onboarding, and leading product demos which facilitated the onboarding of two major US clients.\nThis hands-on approach not only accelerated the company's entrance into the SaaS market but also established a strong market presence and robust client engagement through technical excellence and strategic client interactions.",
+    icon: React.createElement(CgWorkAlt),
+    skillIcons: ["logos:java", "skill-icons:aws-dark", "mdi:apache-kafka", "devicon:postgresql", "vscode-icons:file-type-elastic", "simple-icons:apachehadoop"],
+    date: "January 2018 - March 2019",
+  },
+  {
+    title: "Project Engineer",
+    location: "Wipro Technologies, Hyderabad",
+    description:
+      "I was involved in customizing the Savvion BPM tool to meet the specific needs of varied Genpact's end clients, focusing on adapting software features, resolving bugs, and creating tailored reporting tools for unique client demands.\nAdditionally, I developed internal tools for streamline ad-hoc reporting and reconciliation processes of Support team, which significantly reduced redundancies and enhanced operational efficiency, directly improving productivity and service quality in client support operations.",
+    icon: React.createElement(CgWorkAlt),
+    skillIcons: ["logos:java", "logos:python", "devicon:oracle", "gis:network"],
+    date: "December 2015 - January 2018",
   },
 ] as const;
 
@@ -169,6 +199,21 @@ export const projectsData = [
   },
 ] as const;
 
+export const CertificationsData = [
+  {
+    imageUrl: cda,
+  },
+  {
+    imageUrl: mcda,
+  },
+  {
+    imageUrl: saa,
+  },
+  {
+    imageUrl: scw,
+  },
+] as const;
+
 export const skillsData = [
   {
     name: "Java",
@@ -230,20 +275,16 @@ export const skillsData = [
     name: "Apache Spark",
     icon: "devicon:apachespark"
   },
- 
+  {
+    name: "Terraform",
+    icon: "vscode-icons:file-type-terraform",
+  },
   {
     name: "Docker",
     icon: "logos:docker-icon",
   },
-  
- 
-  
   {
     name: "Kubernetes",
     icon: "devicon:kubernetes"
   },
-  
-  
- 
-  
 ] as const;

@@ -100,6 +100,7 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "MtoM",
+    tags: [],
     description:
       "I guided the startup from vision to reality, designing and leading the development of a comprehensive society management platform. My technical and design expertise not only brought their product to market but also created a robust and scalable system that seamlessly integrates essential services, significantly boosting community efficiency and convenience.",
     icons: [
@@ -114,6 +115,7 @@ export const projectsData = [
   },
   {
     title: "TelosAir",
+    tags: [],
     description:
       "I undertook a major revamp of their existing architecture to transition it into a scalable SaaS model, significantly broadening its market potential. I also spearheaded the migration of their services to AWS IoT and EKS, enhancing the platform's reliability and performance. My efforts not only modernized TelosAir's infrastructure but also optimized operational efficiency and expanded its service capabilities, setting a new standard for future developments.",
     icons: [

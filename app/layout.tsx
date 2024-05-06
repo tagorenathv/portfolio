@@ -4,6 +4,7 @@ import ActiveSectionContextProvider from "@/context/active-section-context";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
+import { Analytics } from '@vercel/analytics/react';
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
             <Header />
             {children}
+            <Analytics />
 
             <Toaster position="top-right" />
             {/* <ThemeSwitch /> */}

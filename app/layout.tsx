@@ -5,6 +5,7 @@ import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Analytics />
+            <SpeedInsights/>
 
             <Toaster position="top-right" />
             {/* <ThemeSwitch /> */}

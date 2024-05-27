@@ -11,6 +11,7 @@ import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
 import { Icon } from "@iconify/react";
+import { BiLinkExternal } from "react-icons/bi";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -52,25 +53,26 @@ export default function Experience() {
                     {part}
                     {index !== item.description.length - 1 && <br />}
                   </React.Fragment>
-                ))}
+                ))}              
               </p>
               <ul className="flex flex-wrap mb-3 sm:mt-auto">
                 {item.skillIcons.map((icon, iconIndex) => (
                   <Icon key={iconIndex} icon={icon} className="mr-3 md:text-4xl" />
                 ))}
               </ul>
-              <ul className="flex">
-                {urlLink && (
+             
+              {/* <ul className="flex">
+                {item.urlLink && (
                   <a
-                    href={urlLink}
+                    href={item.urlLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center bg-[#111827] text-white py-2 px-4 mr-2 rounded-full hover:scale-105"
                   >
-                    <BiLinkExternal className="mr-1" /> Live
+                    <BiLinkExternal className="mr-1" /> Link
                   </a>
                 )}
-              </ul>
+              </ul> */}
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

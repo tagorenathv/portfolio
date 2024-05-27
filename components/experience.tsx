@@ -59,6 +59,18 @@ export default function Experience() {
                   <Icon key={iconIndex} icon={icon} className="mr-3 md:text-4xl" />
                 ))}
               </ul>
+              <ul className="flex">
+                {urlLink && (
+                  <a
+                    href={urlLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center bg-[#111827] text-white py-2 px-4 mr-2 rounded-full hover:scale-105"
+                  >
+                    <BiLinkExternal className="mr-1" /> Live
+                  </a>
+                )}
+              </ul>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

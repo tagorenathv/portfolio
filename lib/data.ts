@@ -49,6 +49,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
     date: "October 2023 - Till Date",
+    urlLink: "https://www.deliveryhero.com/",
   },
   {
     title: "Senior Software Engineer",
@@ -58,6 +59,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:aws-dark", "devicon:postgresql", "devicon:elasticsearch",],
     date: "September 2021 - September 2023",
+    urlLink: "https://www.auto1.com/en/home",
   },
   {
     title: "Principal Engineer",
@@ -67,6 +69,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["vscode-icons:file-type-go", "skill-icons:aws-dark", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
     date: "May 2021 - August 2021",
+    urlLink: "https://www.accenture.com/in-en/services/software-engineering/product-platform-engineering",
   },
   {
     title: "Software Engineer Specialist",
@@ -76,6 +79,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:aws-dark", "devicon:apachespark", "logos:apache-flink-icon", "logos:hbase", "devicon:postgresql", "simple-icons:apachehive"],
     date: "March 2019 - May 2021",
+    urlLink: "https://www.telstra.com.au/",
   },
   {
     title: "Data Engineer",
@@ -85,6 +89,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:aws-dark", "mdi:apache-kafka", "devicon:postgresql", "vscode-icons:file-type-elastic", "simple-icons:apachehadoop"],
     date: "January 2018 - March 2019",
+    urlLink: "https://www.linkedin.com/company/technominds-cyberlabsoz/",
   },
   {
     title: "Project Engineer",
@@ -94,6 +99,7 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "logos:python", "devicon:oracle", "gis:network"],
     date: "December 2015 - January 2018",
+    urlLink: "https://www.wipro.com/",
   },
 ] as const;
 

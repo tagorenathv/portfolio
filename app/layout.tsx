@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import Head from "next/head";
 
 const nunito = Nunito({ subsets: ["latin"] });
 
@@ -14,13 +15,22 @@ export const metadata = {
   description: "Tagorenath V is a seasoned software engineer specializing in scalable, cost-efficient software architectures. Explore my portfolio to see my contributions to open-source projects and my role in supporting startups through digital transformation.",
   keywords: "Tagorenath, Tagorenath V, Software Engineer, Open-Source Contributor, Scalable Architecture, Cost Efficiency, Startup Technology Advisor, Digital Transformation, Web Development, Mobile Development",
   author: "Tagorenath V",
-  og: {
+  siteName: 'Tagorenath V Portfolio',
+  openGraph: {
     title: "Tagorenath V | Software Engineer & Open-Source Contributor",
     type: "website",
     locale: "en_US",
+    siteName: 'Tagorenath V Portfolio',
     url: "https://www.tagorenathv.me/",
     image: "https://www.tagorenathv.me/profile-pic.png",
-    description: "Discover the innovative work of Tagorenath V, a software engineer with deep expertise in developing scalable and cost-efficient solutions. Check out my skills, projects, certification and insights into digital transformation for startups."
+    description: "I am Tagorenath V, a seasoned software engineer specializing in designing scalable and cost-efficient software architectures. Dive into my portfolio to see the technologies I work with, detailed case studies of projects I've led, and the key achievements throughout my career. Additionally, I am committed to contributing to open-source projects and supporting startups in their digital transformation efforts, leveraging my expertise to foster innovation and growth.",
+  },
+  twitter: {
+    card: 'summary',
+    title: "Tagorenath V | Software Engineer & Open-Source Contributor",
+    description: "I am Tagorenath V, a seasoned software engineer specializing in designing scalable and cost-efficient software architectures. Dive into my portfolio to see the technologies I work with, detailed case studies of projects I've led, and the key achievements throughout my career. Additionally, I am committed to contributing to open-source projects and supporting startups in their digital transformation efforts, leveraging my expertise to foster innovation and growth.",
+    creator: 'Tagorenath V',
+    image: "https://www.tagorenathv.me/profile-pic.png",
   },
 };
 
@@ -31,6 +41,19 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <Head>
+        <title>{metadata.title}</title>
+        <meta name="description" content={metadata.description} />
+        <meta name="keywords" content={metadata.keywords} />
+        <meta name="author" content={metadata.author} />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content={metadata.openGraph.type} />
+        <meta property="og:url" content={metadata.openGraph.url} />
+        <meta property="og:title" content={metadata.openGraph.title} />
+        <meta property="og:description" content={metadata.openGraph.description} />
+        <meta property="og:image" content={metadata.openGraph.image} />
+      </Head>
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
       >

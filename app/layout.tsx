@@ -64,7 +64,7 @@ export default function RootLayout({
         <meta property="og:url" content={metadata.openGraph.url} />
         <meta property="og:title" content={metadata.openGraph.title} />
         <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:image" content={metadata.openGraph.image} />
+        <meta property="og:image" content={metadata.openGraph.images[0].url} />
       </Head>
       <body
         className={`${nunito.className} bg-gray-50 text-gray-950 relative dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}

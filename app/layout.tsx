@@ -24,7 +24,7 @@ export const metadata = {
     url: "https://www.tagorenathv.me/",
     images: [
       {
-        url: "https://www.tagorenathv.me/profile-pic.png",
+        url: "https://www.tagorenathv.me/profile.png",
         width: 500,
         height: 500,
       },

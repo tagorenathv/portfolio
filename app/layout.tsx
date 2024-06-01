@@ -22,7 +22,13 @@ export const metadata = {
     locale: "en_US",
     siteName: 'Tagorenath V Portfolio',
     url: "https://www.tagorenathv.me/",
-    image: "https://www.tagorenathv.me/profile-pic.png",
+    images: [
+      {
+        url: "https://www.tagorenathv.me/profile-pic.png",
+        width: 800,
+        height: 600,
+      },
+    ],
     description: "I am Tagorenath V, a seasoned software engineer specializing in designing scalable and cost-efficient software architectures. Dive into my portfolio to see the technologies I work with, detailed case studies of projects I've led, and the key achievements throughout my career. Additionally, I am committed to contributing to open-source projects and supporting startups in their digital transformation efforts, leveraging my expertise to foster innovation and growth.",
   },
   twitter: {
@@ -30,7 +36,13 @@ export const metadata = {
     title: "Tagorenath V | Software Engineer & Open-Source Contributor",
     description: "I am Tagorenath V, a seasoned software engineer specializing in designing scalable and cost-efficient software architectures. Dive into my portfolio to see the technologies I work with, detailed case studies of projects I've led, and the key achievements throughout my career. Additionally, I am committed to contributing to open-source projects and supporting startups in their digital transformation efforts, leveraging my expertise to foster innovation and growth.",
     creator: 'Tagorenath V',
-    image: "https://www.tagorenathv.me/profile-pic.png",
+    images: [
+      {
+        url: "https://www.tagorenathv.me/profile-pic.png",
+        width: 800,
+        height: 600,
+      },
+    ],
   },
 };
 

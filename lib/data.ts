@@ -1,6 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import mtomImg from "@/public/mtom.png";
+import conveyImg from "@/public/convey_ai.png";
 import telosairImg from "@/public/telosair.png";
 import iotSaasImg from "@/public/iot-saas.png";
 import shiftRosterImg from "@/public/shift-roster.png";
@@ -45,7 +46,8 @@ export const experiencesData = [
     title: "Senior Software Engineer",
     location: "Delivery Hero, Berlin",
     description:
-      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization timeline from 30 minutes to 25 minutes.\nAdditionally, I introduced a low-latency GraphQL API, enabling internal systems to directly access up-to-date catalog data. This eliminated the need for these systems to replicate data, streamlining operations and significantly enhancing data accessibility and efficiency.",
+      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization 99%le timeline from over 30 minutes to 3-5 minutes.", 
+      // \nAdditionally, I introduced a low-latency GraphQL API, enabling internal systems to directly access up-to-date catalog data. This eliminated the need for these systems to replicate data, streamlining operations and significantly enhancing data accessibility and efficiency.
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
     date: "October 2023 - Till Date",
@@ -105,20 +107,21 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "MtoM",
+    title: "ConveyAI",
     tags: [],
     description:
-      "I guided the startup from vision to reality, designing and leading the development of a comprehensive society management platform. My technical and design expertise not only brought their product to market but also created a robust and scalable system that seamlessly integrates essential services, significantly boosting community efficiency and convenience.",
+      "I transformed the startup’s vision into reality by architecting and developing Convey.ai, a competitive lead management platform inspired by industry leaders like Convertr.io. My end-to-end involvement in designing and building the system ensured a robust, scalable solution that streamlines lead capture, validation, and distribution, delivering measurable value to businesses.",
     icons: [
       "logos:java",
-      "skill-icons:aws-dark",
+      "mdi:apache-kafka",
       "logos:react",
-      "devicon:flutter",
       "devicon:postgresql",
+      "devicon:redis",
     ],
-    imageUrl: mtomImg,
-    urlLink: "https://mtommart.com",
+    imageUrl: conveyImg,
+    urlLink: "https://www.convey.ai",
   },
+  
   {
     title: "TelosAir",
     tags: [],
@@ -143,6 +146,21 @@ export const projectsData = [
     urlLink: "https://offcampusjobs4u.com",
   },
   {
+    title: "MtoM",
+    tags: [],
+    description:
+      "I guided the startup from vision to reality, designing and leading the development of a comprehensive society management platform. My technical and design expertise not only brought their product to market but also created a robust and scalable system that seamlessly integrates essential services, significantly boosting community efficiency and convenience.",
+    icons: [
+      "logos:java",
+      "skill-icons:aws-dark",
+      "logos:react",
+      "devicon:flutter",
+      "devicon:postgresql",
+    ],
+    imageUrl: mtomImg,
+    urlLink: "https://mtommart.com",
+  },
+  {
     title: "IoT SaaS",
     description:
       "For the MongoDB hackathon, I developed a prototype that leverages MongoDB Atlas and Realm to offer IoT device management as a subscription-based SaaS model. Users can subscribe to devices, monitor data, and receive real-time alerts. This application showcases MongoDB's robust capabilities, including time-series data management, advanced search functionalities, and automated triggers, providing a comprehensive demonstration of modern database technologies applied to IoT services.",
@@ -160,20 +178,20 @@ export const projectsData = [
     githubLink: "https://github.com/tagorenathv/slack-shift-roster",
   },
   {
-    title: "Open Localization",
-    description:
-      "This serverless project, akin to PhraseApp, offers a streamlined and cost-effective localization solution built with Python, ReactJS, and AWS. Deploying directly within a user's AWS account ensures privacy and reduces infrastructure complexity. With its scalability and ease of integration, it is an optimal tool for companies looking to enhance global accessibility efficiently, without the operational overhead typically associated with traditional localization tools.",
-    icons: ["logos:python", "skill-icons:aws-dark", "logos:react", ],
-    imageUrl: openlocalizationImg,
-    githubLink: "https://github.com/tagorenathv/open-localization-serverless",
-  },
-  {
     title: "Lambton College Program Advisory",
     description:
       "I have served as a member of the Program Advisory Committee for Lambton College's Big Data with AI/ML specialization course, a program offered by a well-regarded institution known for its emphasis on innovation and industry-aligned education. In this role, I provided crucial insights to the curriculum, ensuring it stays at the forefront of technological advancements and meets the complex demands of today's data-driven industries. My contributions help prepare students to excel in the dynamic fields of big data, artificial intelligence, and machine learning, equipping them with the necessary skills to succeed.",
     icons: ["devicon:hadoop", "carbon:ai", "gravity-ui:abbr-ml", ],
     imageUrl: lambtonImg,
     urlLink: "https://www.lambtoncollege.ca",
+  },
+  {
+    title: "Open Localization (In Progress)",
+    description:
+      "This serverless project, akin to PhraseApp, offers a streamlined and cost-effective localization solution built with Python, ReactJS, and AWS. Deploying directly within a user's AWS account ensures privacy and reduces infrastructure complexity. With its scalability and ease of integration, it is an optimal tool for companies looking to enhance global accessibility efficiently, without the operational overhead typically associated with traditional localization tools.",
+    icons: ["logos:python", "skill-icons:aws-dark", "logos:react", ],
+    imageUrl: openlocalizationImg,
+    githubLink: "https://github.com/tagorenathv/open-localization-serverless",
   },
 ] as const;
 

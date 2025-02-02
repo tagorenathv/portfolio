@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Senior Software Engineer",
     location: "Delivery Hero, Berlin",
     description:
-      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization 99%le timeline from over 30 minutes to 3-5 minutes.", 
+      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization 99%le timeline from over hour(s) to 3-5 minutes.", 
       // \nAdditionally, I introduced a low-latency GraphQL API, enabling internal systems to directly access up-to-date catalog data. This eliminated the need for these systems to replicate data, streamlining operations and significantly enhancing data accessibility and efficiency.
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],

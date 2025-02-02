@@ -64,7 +64,13 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Tagorenath.</span> I'm a{" "}
         <span className="font-bold">Software Engineer</span> with expertise in designing and developing {" "}
-        <span className="font-bold">scalable and cost-efficient</span> software architectures. I also contribute to open-source projects and support startups in their digital transformation.
+        <span className="font-bold">scalable </span>
+        and 
+        <span className="font-bold"> cost-efficient </span> software architectures. I also contribute to 
+        <span className="font-bold"> open-source </span> 
+        projects and support 
+        <span className="font-bold"> startups </span> 
+        in their digital transformation.
       </motion.h1>
 
       <motion.div

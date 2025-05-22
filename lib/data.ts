@@ -1,11 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import mtomImg from "@/public/mtom.png";
-import conveyImg from "@/public/convey_ai.png";
+import leadsGuruImg from "@/public/leadsguru_io.png";
 import telosairImg from "@/public/telosair.png";
 import iotSaasImg from "@/public/iot-saas.png";
 import shiftRosterImg from "@/public/shift-roster.png";
-import euphorusBackendImg from "@/public/euphorus-backend.png";
+import pgscoutImg from "@/public/pgscout.png";
 import lambtonImg from '@/public/lambton.png';
 import ocj4uImg from "@/public/ocj4u.png";
 import saa from "@/public/aws-saa.png";
@@ -46,7 +46,7 @@ export const experiencesData = [
     title: "Senior Software Engineer",
     location: "Delivery Hero, Berlin",
     description:
-      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a 40% reduction in data processing times and an 80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization 99%le timeline from over hour(s) to 3-5 minutes.", 
+      "As part of the Quick Commerce Catalog team, I played a crucial role in transforming the processing and synchronization of catalog information across DeliveryHero’s global network, encompassing 70 countries and multiple platforms.\nMy initiatives resulted in a +20% reduction in cost, +90% reduction in data processing times and an +80% decrease in data redundancy. By re-architecting critical systems, we improved the synchronization 99%le timeline from over hour(s) to below 1 minute.", 
       // \nAdditionally, I introduced a low-latency GraphQL API, enabling internal systems to directly access up-to-date catalog data. This eliminated the need for these systems to replicate data, streamlining operations and significantly enhancing data accessibility and efficiency.
     icon: React.createElement(CgWorkAlt),
     skillIcons: ["logos:java", "skill-icons:gcp-dark", "devicon:redis", "devicon:postgresql", "mdi:apache-kafka"],
@@ -107,7 +107,7 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "ConveyAI",
+    title: "LeadsGuru (formerly ConveyAI)",
     tags: [],
     description:
       "I transformed the startup’s vision into reality by architecting and developing Convey.ai, a competitive lead management platform inspired by industry leaders like Convertr.io. My end-to-end involvement in designing and building the system ensured a robust, scalable solution that streamlines lead capture, validation, and distribution, delivering measurable value to businesses.",
@@ -118,8 +118,8 @@ export const projectsData = [
       "devicon:postgresql",
       "devicon:redis",
     ],
-    imageUrl: conveyImg,
-    urlLink: "https://www.convey.ai",
+    imageUrl: leadsGuruImg,
+    urlLink: "https://www.leadsguru.io",
   },
   
   {
@@ -185,13 +185,21 @@ export const projectsData = [
     imageUrl: lambtonImg,
     urlLink: "https://www.lambtoncollege.ca",
   },
-  {
+ /*  {
     title: "Open Localization (In Progress)",
     description:
       "This serverless project, akin to PhraseApp, offers a streamlined and cost-effective localization solution built with Python, ReactJS, and AWS. Deploying directly within a user's AWS account ensures privacy and reduces infrastructure complexity. With its scalability and ease of integration, it is an optimal tool for companies looking to enhance global accessibility efficiently, without the operational overhead typically associated with traditional localization tools.",
     icons: ["logos:python", "skill-icons:aws-dark", "logos:react", ],
     imageUrl: openlocalizationImg,
     githubLink: "https://github.com/tagorenathv/open-localization-serverless",
+  }, */
+  {
+    title: "pgscout (In Progress)",
+    description:
+      "pgscout is a extensible Go-based tool for monitoring and analyzing PostgreSQL databases and generating optimization recommendations. It supports multiple modes: Advisory (for generating and outputting recommendations), API (for programmatic access, in progress), and Export (for data export, in progress). Advisory mode analyzes primary databases and, once implemented, their replicas to provide actionable advice for performance and maintenance.",
+    icons: ["vscode-icons:file-type-go", "devicon:postgresql", ],
+    imageUrl: pgscoutImg,
+    urlLink: "https://github.com/tagorenathv/pgscout",
   },
 ] as const;
 

@@ -8,7 +8,7 @@ import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ParticleContainer from "./particle-container";
-import profilePic from "@/public/profile-pic.png";
+import profilePic from "@/public/profile.png";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);

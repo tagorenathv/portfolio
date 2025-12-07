@@ -5,7 +5,7 @@ import leadsGuruImg from "@/public/leadsguru_io.png";
 import telosairImg from "@/public/telosair.png";
 import iotSaasImg from "@/public/iot-saas.png";
 import shiftRosterImg from "@/public/shift-roster.png";
-import pgscoutImg from "@/public/pgscout.png";
+import pgpulseImg from "@/public/pgpulse.png";
 import lambtonImg from '@/public/lambton.png';
 import ocj4uImg from "@/public/ocj4u.png";
 import saa from "@/public/aws-saa.png";
@@ -107,6 +107,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "pgpulse",
+    description:
+      "pgpulse — A zero-setup micro-SaaS for Supabase that provides real-time database observability with automated performance insights and actionable tuning advice.",
+    icons: ["vscode-icons:file-type-go", "devicon:postgresql", "logos:react","devicon:supabase"],
+    imageUrl: pgpulseImg,
+    urlLink: "https://pgpulse.io",
+  },
+  {
     title: "LeadsGuru (formerly ConveyAI)",
     tags: [],
     description:
@@ -193,14 +201,7 @@ export const projectsData = [
     imageUrl: openlocalizationImg,
     githubLink: "https://github.com/tagorenathv/open-localization-serverless",
   }, */
-  {
-    title: "pgscout (In Progress)",
-    description:
-      "pgscout is a extensible Go-based tool for monitoring and analyzing PostgreSQL databases and generating optimization recommendations. It supports multiple modes: Advisory (for generating and outputting recommendations), API (for programmatic access, in progress), and Export (for data export, in progress). Advisory mode analyzes primary databases and, once implemented, their replicas to provide actionable advice for performance and maintenance.",
-    icons: ["vscode-icons:file-type-go", "devicon:postgresql", ],
-    imageUrl: pgscoutImg,
-    urlLink: "https://github.com/tagorenathv/pgscout",
-  },
+  
 ] as const;
 
 export const CertificationsData = [
